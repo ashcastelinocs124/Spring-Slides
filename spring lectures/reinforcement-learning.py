@@ -23,7 +23,6 @@ print("=" * 60)
 print("  Model: gemini/gemini-2.5-flash (temperature=0.0)")
 print("  This is the LLM that DSPy will call under the hood.\n")
 
-os.environ["GEMINI_API_KEY"] = "AIzaSyBGFvMRoGJPv5RWKXhKt5EQ1QQ18JMYmBQ"
 lm = dspy.LM("gemini/gemini-2.5-flash", temperature=0.0)
 dspy.configure(lm=lm)
 
